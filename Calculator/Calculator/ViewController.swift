@@ -24,6 +24,12 @@ class ViewController: UIViewController
         }
     }
     
+    @IBAction func addDecimal() {
+        let decimalPosition = display.text!.rangeOfString(".")
+        if decimalPosition == nil {
+            display.text! += "."
+        }
+    }
     
     @IBAction func operate(sender: UIButton) {
         let operation = sender.currentTitle!
