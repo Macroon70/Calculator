@@ -39,9 +39,8 @@ class ViewController: UIViewController
     }
     
     @IBAction func clearAll() {
-        display.text = "0"
+        clear()
         operationsList.text = ""
-        userIsInTheMiddleOfTypingANumber = false
         operandStack.removeAll(keepCapacity: false)
     }
     
